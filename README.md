@@ -4,6 +4,8 @@ A Neovim plugin renders markdown file in terminal buffer.
 
 Only tested under Mac.
 
+![screenshot](./assets/screen.png)
+
 ## Features
 
 - Open terminal buffer in different direction: `vertical`, `horizontal`.
