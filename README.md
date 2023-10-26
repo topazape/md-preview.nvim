@@ -1,4 +1,4 @@
-# md-preview
+# md-preview.nvim
 
 A Neovim plugin renders markdown file in terminal buffer.
 
