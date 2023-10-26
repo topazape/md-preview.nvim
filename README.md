@@ -14,7 +14,7 @@ Only tested under Mac.
 
 ## Requirements
 Any markdown viewer you like, such as:
-- [Glow](https://github.com/charmbracelet/glow#installation)
+- [glow](https://github.com/charmbracelet/glow)
 - [mdcat](https://github.com/swsnr/mdcat)
 
 ## Installation
@@ -26,11 +26,11 @@ require("lazy").setup({
   "topazape/md-preview.nvim",
   ft = {"md", "markdown", "mkd", "mkdn", "mdwn", "mdown", "mdtxt", "mdtext", "rmd", "wiki"},
   config = function()
-    require("md-preview").setup {
+    require("md-preview").setup({
       -- your configuration comes here
       -- or leave it empty to use the default settings
       -- refer to the setup section below
-    },
+    }),
   end
 })
 ```
@@ -56,10 +56,10 @@ mp.setup({
         },
         direction = "vertical", -- choices: vertical / horizontal
         keys = {
-        close = {"q"},
-        refresh = "r",
-        }
-      }
+          close = {"q"},
+          refresh = "r",
+        },
+      },
     })
 ```
 
