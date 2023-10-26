@@ -41,12 +41,11 @@ Following defaults:
 
 ```lua
 local mp = require("md-preview")
-mp.setup(
-    {
+mp.setup({
       viewer = {
-        exec = "mdcat",
+        exec = "mdcat", -- or "glow"
         exec_path = "",
-        args = { "--local" },
+        args = { "--local" }, -- if you choose glow, set like: { "-s", "dark" }
       },
       -- Markdown preview term
       term = {
@@ -61,8 +60,7 @@ mp.setup(
         refresh = "r",
         }
       }
-    }
-)
+    })
 ```
 
 ## Commands
