@@ -4,8 +4,9 @@ A Neovim plugin renders markdown file in terminal buffer.
 
 Only tested under Mac.
 
+- mdcat
 ![mdcat](./assets/mdcat.png)
-
+- glow
 ![glow](./assets/glow.png)
 
 ## Features
