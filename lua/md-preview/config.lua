@@ -2,11 +2,10 @@
 ---@field md_viewer table
 ---@field term table
 local defaults = {
-	insert_mode_after_preview = true,
 	viewer = {
 		exec = "mdcat",
 		exec_path = "",
-		args = {},
+		args = { "--local" },
 	},
 	-- Markdown preview term
 	term = {
