@@ -46,9 +46,12 @@ Following example:
 local mp = require("md-preview")
 mp.setup({
       viewer = {
-        exec = "mdcat", -- or "glow"
+        exec = "mdcat",
         exec_path = "",
-        args = {}, -- mdcat: { "--local" } or glow: { "-s", "dark" }
+        args = { "--local" },
+        -- exec = "glow",
+        -- exec_path = "",
+        -- args = { "-s", "dark" },
       },
       -- Markdown preview term
       term = {
