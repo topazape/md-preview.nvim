@@ -7,5 +7,5 @@ if loaded == 0 then
  		command! MPOpen lua require('md-preview').open()
  		command! MPClose lua require("md-preview").close()
  		command! MPRefresh lua require("md-preview").refresh()
-  ]])
+ 	]])
 end
