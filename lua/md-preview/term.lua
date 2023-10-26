@@ -192,7 +192,11 @@ function Term:render()
 
 	local viewer_exec = config.get_viewer_exec()
 	local viewer_args = config.get_viewer_args()
-	local cmd_args = { viewer_exec, viewer_args, self.tf }
+	local cmd_args = { viewer_exec }
+	for _, arg in ipairs(viewer_args) do
+		table.insert(cmd_args, arg)
+	end
+	table.insert(cmd_args, self.tf)
 
 	self:unlock()
 	local chan = api.nvim_open_term(vim.g.mp_bufnr, {})

@@ -37,7 +37,7 @@ require("lazy").setup({
 
 ## Setup
 
-Following defaults:
+Following example:
 
 ```lua
 local mp = require("md-preview")
@@ -45,7 +45,7 @@ mp.setup({
       viewer = {
         exec = "mdcat", -- or "glow"
         exec_path = "",
-        args = { "--local" }, -- if you choose glow, set like: { "-s", "dark" }
+        args = {}, -- mdcat: { "--local" } or glow: { "-s", "dark" }
       },
       -- Markdown preview term
       term = {

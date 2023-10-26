@@ -1,11 +1,11 @@
 ---@class ConfigOption
----@field md_viewer table
+---@field viewer table
 ---@field term table
 local defaults = {
 	viewer = {
 		exec = "mdcat",
 		exec_path = "",
-		args = { "--local" },
+		args = {},
 	},
 	-- Markdown preview term
 	term = {
@@ -40,14 +40,11 @@ end
 
 ---Get viewer args
 ---
----@return string
+---@return table
 M.get_viewer_args = function()
 	local viewer = M.opts.viewer or {}
 	local args = viewer["args"] or {}
-
-	local unpacked_args = { unpack(args) }
-	local args_string = table.concat(unpacked_args, " ")
-	return args_string
+	return args
 end
 
 ---Assign options
