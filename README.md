@@ -8,8 +8,8 @@ Only tested under Mac.
 ![mdcat](./assets/mdcat.png)
 - glow
 ![glow](./assets/glow.png)
-- mdv
-![mdv](./assets/mdv.png)
+- terminal markdown viewer
+![terminal markdown viewer](./assets/mdv.png)
 
 ## Features
 
@@ -21,13 +21,19 @@ Only tested under Mac.
 Any markdown viewer you like, such as:
 
 ### [mdcat](https://github.com/swsnr/mdcat)
-`brew install mdcat`
+```sh
+$ brew install mdcat
+```
 
 ### [glow](https://github.com/charmbracelet/glow)
-`brew install glow`
+```sh
+$ brew install glow
+```
 
 ### [terminal markdown viewer](https://github.com/axiros/terminal_markdown_viewer)
-`brew install mdv`
+```sh
+$ brew install mdv
+```
 
 ## Installation
 
@@ -65,7 +71,7 @@ mp.setup({
         -- exec_path = "",
         -- args = { "-s", "dark" },
 
-        -- mdv
+        -- terminal markdown viewer
         -- exec = "mdv',
         -- exec_path = "",
         -- args = { "-c", 80 },
