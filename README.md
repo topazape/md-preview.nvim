@@ -8,6 +8,8 @@ Only tested under Mac.
 ![mdcat](./assets/mdcat.png)
 - glow
 ![glow](./assets/glow.png)
+- mdv
+![mdv](./assets/mdv.png)
 
 ## Features
 
@@ -17,8 +19,15 @@ Only tested under Mac.
 
 ## Requirements
 Any markdown viewer you like, such as:
-- [glow](https://github.com/charmbracelet/glow)
-- [mdcat](https://github.com/swsnr/mdcat)
+
+### [mdcat](https://github.com/swsnr/mdcat)
+`brew install mdcat`
+
+### [glow](https://github.com/charmbracelet/glow)
+`brew install glow`
+
+### [terminal markdown viewer](https://github.com/axiros/terminal_markdown_viewer)
+`brew install mdv`
 
 ## Installation
 
@@ -46,12 +55,20 @@ Following example:
 local mp = require("md-preview")
 mp.setup({
       viewer = {
+        -- mdcat
         exec = "mdcat",
         exec_path = "",
         args = { "--local" },
+
+        -- glow
         -- exec = "glow",
         -- exec_path = "",
         -- args = { "-s", "dark" },
+
+        -- mdv
+        -- exec = "mdv',
+        -- exec_path = "",
+        -- args = { "-c", 80 },
       },
       -- Markdown preview term
       term = {
