@@ -72,7 +72,7 @@ mp.setup({
         -- args = { "-s", "dark" },
 
         -- terminal markdown viewer
-        -- exec = "mdv',
+        -- exec = "mdv",
         -- exec_path = "",
         -- args = { "-c", 80 },
       },
